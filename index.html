@@ -12,166 +12,85 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+
+    <!--Header-->
+    <header class="container-fluid px-0">
+        <!--    contact-->
+        <div class="container d-flex info-social">
+            <div class="my-auto mr-auto info">
+                <i class="far fa-envelope blue-azure"></i>
+                <span class="mail border-right px-2">contact@example.com</span>
+                <i class="px-2 fas fa-phone blue-azure"></i>
+                <span class="px-2">+1 5589 55488 55</span>
+            </div>
+            <div class="my-auto ml-auto social">
+                <i class="px-2p5 mx-auto fab fa-twitter border-right"></i>
+                <i class="px-2p5 mx-auto fab fa-facebook-f border-right"></i>
+                <i class="px-2p5 mx-auto fab fa-instagram border-right"></i>
+                <i class="px-2p5 mx-auto fab fa-google-plus-g border-right"></i>
+                <i class="px-2p5 mx-auto fab fa-linkedin-in"></i>
+            </div>
+        </div>
+        <hr>
+        <nav class="container navbar navbar-expand-lg">
+            <a class="navbar-brand blue-dark logo" href="#">
+                <b>Reve<span class="blue-azure">al</span></b>
+            </a>
+            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <div class="collapse navbar-collapse " id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop Down</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
             </div>
         </nav>
-        <section>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner text-white">
-                    <div class="carousel-item carousel-bg1 active ">
-                        <div class="d-block w-50 pt-5 text-center carousel-height mx-auto">
-                            <div class="carousel-caption pb-5">
-                                <h2 class="display-5 mt-5 pt-5">Heading 1</h2>
-                                <p class="px-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione eligendi enim, vero qui
-                                    quisquam alias fugit inventore laboriosam, aspernatur, nam corrupti magnam ab praesentium
-                                    corporis dolorem quis mollitia. Doloribus, magnam!</p>
-                                <button class="btn btn-primary">Learn more</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item carousel-bg2">
-                        <div class="d-block w-50 pt-5 text-center carousel-height mx-auto">
-                            <div class="carousel-caption pb-5">
-                                <h2 class="display-5 mt-5 pt-5">Heading 1</h2>
-                                <p class="px-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione eligendi enim, vero qui
-                                    quisquam alias fugit inventore laboriosam, aspernatur, nam corrupti magnam ab praesentium
-                                    corporis dolorem quis mollitia. Doloribus, magnam!</p>
-                                <button class="btn btn-primary">Learn more</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item carousel-bg3">
-                        <div class="d-block w-50 pt-5 text-center carousel-height mx-auto">
-                            <div class="carousel-caption pb-5">
-                                <h2 class="display-5 mt-5 pt-5">Heading 1</h2>
-                                <p class="px-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione eligendi enim, vero qui
-                                    quisquam alias fugit inventore laboriosam, aspernatur, nam corrupti magnam ab praesentium
-                                    corporis dolorem quis mollitia. Doloribus, magnam!</p>
-                                <button class="btn btn-primary">Learn more</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </section>
+
+        <!--    logo + navigation-->
     </header>
-    <main class="container text-gray">
-        <section class="row pt-5 border-bottom">
-            <article class="col-xs-12 col-md-12 col-lg-4 text-center my-4 pb-4">
-                <img src="https://picsum.photos/150?random" alt="image 1" class="rounded-circle">
-                <h2 class="">Heading 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione eligendi enim, vero qui quisquam alias
-                    fugit inventore laboriosam, aspernatur, nam corrupti magnam ab praesentium corporis dolorem quis mollitia.
-                    Doloribus, magnam!</p>
-                <button class="btn btn-secondary">Views details
-                    <i class="fa fa-angle-double-right"></i>
-                </button>
-            </article>
-            <article class="col-xs-12 col-md-12 col-lg-4 text-center my-4 pb-4">
-                <img src="https://picsum.photos/150?random" alt="image 2" class="rounded-circle">
-                <h2 class="">Heading 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione eligendi enim, vero qui quisquam alias
-                    fugit inventore laboriosam, aspernatur, nam corrupti magnam ab praesentium corporis dolorem quis mollitia.
-                    Doloribus, magnam!</p>
-                <button class="btn btn-secondary">Views details
-                    <i class="fas fa-angle-double-right"></i>
-                </button>
-            </article>
-            <article class="col-xs-12 col-md-12 col-lg-4 text-center my-4 pb-4">
-                <img src="https://picsum.photos/150?random" alt="image 3" class="rounded-circle">
-                <h2 class="">Heading 3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione eligendi enim, vero qui quisquam alias
-                    fugit inventore laboriosam, aspernatur, nam corrupti magnam ab praesentium corporis dolorem quis mollitia.
-                    Doloribus, magnam!</p>
-                <button class="btn btn-secondary">Views details
-                    <i class="fas fa-angle-double-right"></i>
-                </button>
-            </article>
-        </section>
-        <section class="container">
-            <article class="row border-bottom py-5 align-items-center article-height">
-                <img class="col-lg-4" src="https://picsum.photos/500/500?random" alt="image article 1">
-                <div class="col-lg-8">
-                    <h3>First featurette.
-                        <span class="text_gray">it'll bllow your mind.</span>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, vel! Doloremque at doloribus vel dignissimos,
-                        modi adipisci incidunt pariatur, magnam dicta error provident obcaecati? Deleniti, doloremque. Labore
-                        dolores, quos modi, velit, laborum qui omnis ad assumenda neque sequi quis? Reiciendis?</p>
-                </div>
-            </article>
-            <article class="row border-bottom py-5 align-items-center article-height">
-                <div class="col-lg-8">
-                    <h3>First featurette.
-                        <span class="text_gray">it'll bllow your mind.</span>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, vel! Doloremque at doloribus vel dignissimos,
-                        modi adipisci incidunt pariatur, magnam dicta error provident obcaecati? Deleniti, doloremque. Labore
-                        dolores, quos modi, velit, laborum qui omnis ad assumenda neque sequi quis? Reiciendis?</p>
-                </div>
-                <img class="col-lg-4" src="https://picsum.photos/500/500?random" alt="image article 2">
+    <!--Main-->
+    <!--    Section = Visuel -->
+    <!--    Section = Description-->
+    <!--    Section = Services -->
+    <!--    Section = Testimonials-->
+    <!--    Section = Cal To action-->
+    <!--    Section = Contact us-->
+    <!--    Coordonnées -->
+    <!--    Formulaire -->
+    <!--Footer-->
 
-            </article>
-            <article class="row border-bottom py-5 align-items-center article-height">
-                <img class="col-lg-4" src="https://picsum.photos/500/500?random" alt="image article 3">
-                <div class="col-lg-8">
-                    <h3>First featurette.
-                        <span class="text_gray">it'll bllow your mind.</span>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, vel! Doloremque at doloribus vel dignissimos,
-                        modi adipisci incidunt pariatur, magnam dicta error provident obcaecati? Deleniti, doloremque. Labore
-                        dolores, quos modi, velit, laborum qui omnis ad assumenda neque sequi quis? Reiciendis?</p>
-                </div>
-            </article>
-        </section>
-    </main>
-    <footer class="container mx-auto row py-5">
-        <span class="col-md-10 text-left">&copy;2017-2018 Company, Inc.
-             <a href="#" class="btn btn-link">&middot; Privacy</a>
-             <a href="#" class="btn btn-link">&middot; Terms</a>
-        </span>
-        <span class="col-md-2 text-right">
-            <a href="#" class="btn btn-link">Back to top</a>
-        </span>
-
-    </footer>
 
 
 
