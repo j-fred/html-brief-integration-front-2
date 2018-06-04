@@ -3,12 +3,20 @@
     --blue-azure: #50d8af;
 }
 
-.blue-dark {
+.txt--blue-dark {
     color: var(--blue-dark);
 }
 
-.blue-azure {
+.txt--blue-azure {
     color: var(--blue-azure);
+}
+
+.bg--blue-dark {
+    background: var(--blue-dark);
+}
+
+.bg--blue-azure {
+    background: var(--blue-azure);
 }
 
 body {
@@ -44,8 +52,12 @@ hr {
 } */
 
 .logo {
-    font-size: 3rem;
-    font-weight: 500;
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+
+.flipY {
+    transform: scaleX(-1);
 }
 
 .px-2p5 {
@@ -53,6 +65,159 @@ hr {
     padding-right: 0.8rem;
 }
 
+nav li>a {
+    color: #333;
+    font-weight: 700;
+}
+
+nav li>a:hover {
+    color: var(--blue-azure);
+    font-weight: 700;
+}
+
+.underline {
+    position: relative;
+}
+
+.underline:before {
+    content: "";
+    width: 100%;
+    height: 8px;
+    background: var(--blue-azure);
+    position: absolute;
+    top: 90%;
+    left: 0;
+}
+
 /** Main **/
 
+.visuel {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(https://picsum.photos/1000/500?image=862) no-repeat center center;
+    background-size: cover;
+    min-height: 600px;
+    padding-top: 200px;
+    font-weight: 700;
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+}
+
+.visuel>h1 {
+    width: 40%;
+    font-weight: 800;
+}
+
+.visuel>h1.txt--blue-azure {
+    text-decoration: underline;
+}
+
+.visuel>a {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+article ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+article ul li {
+    padding-top: 20px;
+}
+
+article ul li:before {
+    content: "";
+    background-image: url('../img/check.png');
+    background-repeat: no-repeat;
+    background-position: 0 -0.1rem;
+    padding-left: 1.5rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.title:before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: var(--blue-azure);
+    position: absolute;
+    top: 3.7rem;
+    left: 0;
+}
+
+.box-shadow {
+    box-shadow: 10px 7px 16px -1px rgba(0, 0, 0, 0.16);
+}
+
+.services-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.services-para {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card-body p:before {
+    content: url(../img/quote-left.svg);
+    width: 2rem;
+    height: auto;
+    display: block;
+    fill: #e4f4fb;
+}
+
+.card-body p:after {
+    content: url(../img/quote-right.svg);
+    width: 2rem;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    fill: #e4f4fb;
+}
+
+.card-body {
+    box-shadow: 1px 1px 1px 1px #E3E0E0;
+    height: 450px;
+}
+
+.card h4 {
+    font-size: 1.2rem;
+    ;
+    font-weight: 700;
+}
+
+.card img {
+    width: 90px;
+    height: 90px;
+}
+
+.address {
+    height: 300px;
+}
+
+.address i {
+    font-size: 3rem;
+    color: var(--blue-azure);
+}
+
+.address div>div{
+    color: var(--blue-azure);
+    font-weight: 700;
+    font-size: 1.2rem;
+
+}
 /** Footer **/
+
+footer {
+    background-color: #f2f5f8;
+}
