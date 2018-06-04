@@ -119,6 +119,9 @@ nav li>a:hover {
     font-weight: 600;
 }
 
+.social a{
+    color: #444;
+}
 article ul {
     list-style-type: none;
     padding: 0;
@@ -137,7 +140,7 @@ article ul li:before {
     padding-left: 1.5rem;
 }
 
-.title {
+.title, .title-desc {
     font-size: 2rem;
     font-weight: 700;
     position: relative;
@@ -187,7 +190,7 @@ article ul li:before {
 
 .card-body {
     box-shadow: 1px 1px 1px 1px #E3E0E0;
-    height: 450px;
+    min-height: 450px;
 }
 
 .card h4 {
@@ -202,7 +205,7 @@ article ul li:before {
 }
 
 .address {
-    height: 300px;
+    min-height: 300px;
 }
 
 .address i {
