@@ -43,7 +43,7 @@ hr {
 }
 
 .info-social {
-    height: 42px;
+    min-height: 42px;
     font-size: 0.9rem;
 }
 
